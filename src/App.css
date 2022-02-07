@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --heading: 'Baloo 2', cursive;
+  --condensed: 'Open Sans Condensed', sans-serif;
+  --quicksand: 'Quicksand', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+    
+  height: calc(100vh);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  text-align: center;
+  max-width: 600px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 6px;
+  position: relative;
+  background-color: rgba(255,255,255,0.16);
+  box-shadow: 0px 14px 25px rgba(0,0,0,0.2);
+}
+
+.header {
+  padding: 0.4rem;
+}
+
+.subHeading {
+  font-family: var(--quicksand);
+  font-size: 22px;
+  color: #bede6d;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.aiOutlineCoffee {
+  margin-left: 0.5rem;
+  font-size: 21px;
+  opacity: 0.65;
+}
+
+.addAndSearch {
+  width: 90%;
+  border-radius: 4px;
+  padding: 0rem;
+  background-color: rgba(255,255,255,0.11);
+  margin-bottom: 1rem;
+}
+
+.addAndSearch > .line {
+  background-color: rgba(30,30,30,0.25);
+  width: 90%;
+  height: 1px;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.footer {
+  width: 80%;
+  border-top: 1px solid rgba(30,30,30,0.25);
+  padding: 1rem;
+  color: #464866;
 }

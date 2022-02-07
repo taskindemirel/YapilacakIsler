@@ -1,0 +1,13 @@
+p {
+    font-family: var(--heading);
+    color: rgb(210,210,210);
+}
+
+p:last-child {
+    font-family: var(--quicksand);
+    color: #101c33;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 0.25rem;
+}

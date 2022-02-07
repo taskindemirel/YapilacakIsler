@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #69D4F5;
+    font-family: var(--heading);
+    font-size: 35px;
+}
+
+h1 > span {
+    background: #F0DA4F;
+background: -webkit-linear-gradient(to right, #F0DA4F 0%, #6DCDFF 100%);
+background: -moz-linear-gradient(to right, #F0DA4F 0%, #6DCDFF 100%);
+background: linear-gradient(to right, #F0DA4F 0%, #6DCDFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.logo {
+    color: #69D4F5;
+    font-size: 33px;
+    margin-right: 0.75rem;
+}
